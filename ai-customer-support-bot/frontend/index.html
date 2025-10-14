@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Customer Support Bot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Customer Support</h1>
+            <p>Get instant help with your questions</p>
+        </header>
+
+        <!-- Chat Interface -->
+        <div id="chatInterface" class="chat-interface">
+            <div class="chat-header">
+                <div class="chat-actions">
+                    <button id="escalateBtn" class="btn btn-warning">Speak to Human</button>
+                    <button id="endSessionBtn" class="btn btn-secondary">New Chat</button>
+                </div>
+            </div>
+
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <strong>Support Bot:</strong> Hello! I'm here to help you with your questions. How can I assist you today?
+                    </div>
+                    <div class="message-time"></div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <form id="messageForm">
+                    <input type="text" id="messageInput" placeholder="Type your message here..." required>
+                    <button type="submit" id="sendBtn" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Processing your message...</p>
+        </div>
+
+        <!-- Escalation Modal -->
+        <div id="escalationModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <h3>Escalate to Human Agent</h3>
+                <p>Please provide a reason for escalation:</p>
+                <textarea id="escalationReason" rows="3" placeholder="Describe why you need human assistance..."></textarea>
+                <div class="modal-actions">
+                    <button id="confirmEscalation" class="btn btn-warning">Escalate</button>
+                    <button id="cancelEscalation" class="btn btn-secondary">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div id="faqSection" class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            <div id="faqList" class="faq-list">
+                <!-- FAQs will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

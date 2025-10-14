@@ -1,0 +1,86 @@
+[
+  {
+    "question": "How do I reset my password?",
+    "answer": "To reset your password: 1) Go to the login page and click 'Forgot Password', 2) Enter your email address, 3) Check your email for a reset link, 4) Click the link and enter your new password. The link expires in 24 hours.",
+    "category": "Account",
+    "keywords": "password, reset, forgot, login, email",
+    "priority": 1
+  },
+  {
+    "question": "How can I update my billing information?",
+    "answer": "You can update your billing information by: 1) Logging into your account, 2) Going to Account Settings > Billing, 3) Clicking 'Edit Payment Method', 4) Entering your new card details and clicking 'Save'. Changes take effect immediately.",
+    "category": "Billing",
+    "keywords": "billing, payment, credit card, update, account",
+    "priority": 1
+  },
+  {
+    "question": "What are your business hours?",
+    "answer": "Our customer support is available Monday through Friday, 9 AM to 6 PM EST. For urgent issues outside business hours, please email support@company.com and we'll respond within 24 hours.",
+    "category": "General",
+    "keywords": "hours, support, business, contact, time",
+    "priority": 2
+  },
+  {
+    "question": "How do I cancel my subscription?",
+    "answer": "To cancel your subscription: 1) Log into your account, 2) Go to Account Settings > Subscription, 3) Click 'Cancel Subscription', 4) Confirm your cancellation. Your service will continue until the end of your current billing period.",
+    "category": "Billing",
+    "keywords": "cancel, subscription, billing, account, service",
+    "priority": 1
+  },
+  {
+    "question": "How do I contact customer support?",
+    "answer": "You can contact us through: 1) This chat bot for immediate assistance, 2) Email: support@company.com, 3) Phone: 1-800-SUPPORT during business hours, 4) Help center at help.company.com for self-service options.",
+    "category": "General",
+    "keywords": "contact, support, help, phone, email",
+    "priority": 2
+  },
+  {
+    "question": "Why is my account locked?",
+    "answer": "Accounts are typically locked for security reasons: 1) Multiple failed login attempts, 2) Suspicious activity detected, 3) Outstanding billing issues. To unlock your account, please contact support with your account email and phone number for verification.",
+    "category": "Account",
+    "keywords": "locked, account, security, login, suspended",
+    "priority": 1
+  },
+  {
+    "question": "How do I download my data?",
+    "answer": "To download your data: 1) Go to Account Settings > Privacy, 2) Click 'Download My Data', 3) Select the data types you want, 4) Click 'Request Download'. You'll receive an email with a download link within 48 hours.",
+    "category": "Account",
+    "keywords": "download, data, export, privacy, backup",
+    "priority": 3
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept: 1) Major credit cards (Visa, MasterCard, American Express), 2) PayPal, 3) Bank transfers for enterprise accounts, 4) Digital wallets (Apple Pay, Google Pay). All payments are processed securely.",
+    "category": "Billing",
+    "keywords": "payment, methods, credit card, paypal, billing",
+    "priority": 2
+  },
+  {
+    "question": "How do I upgrade my plan?",
+    "answer": "To upgrade your plan: 1) Log into your account, 2) Go to Account Settings > Subscription, 3) Click 'Change Plan', 4) Select your new plan and click 'Upgrade'. Changes take effect immediately and you'll be charged the prorated amount.",
+    "category": "Billing",
+    "keywords": "upgrade, plan, subscription, billing, change",
+    "priority": 2
+  },
+  {
+    "question": "Is my data secure?",
+    "answer": "Yes, we take security seriously: 1) All data is encrypted in transit and at rest, 2) We use industry-standard security protocols, 3) Regular security audits are conducted, 4) We comply with GDPR, CCPA, and other privacy regulations.",
+    "category": "Security",
+    "keywords": "security, data, privacy, encryption, safe",
+    "priority": 2
+  },
+  {
+    "question": "How do I report a bug?",
+    "answer": "To report a bug: 1) Go to help.company.com and click 'Report Bug', 2) Describe the issue with steps to reproduce, 3) Include screenshots if possible, 4) Provide your browser and OS information. Our team will investigate and respond within 48 hours.",
+    "category": "Technical",
+    "keywords": "bug, report, issue, problem, technical",
+    "priority": 3
+  },
+  {
+    "question": "Can I get a refund?",
+    "answer": "Refund eligibility depends on: 1) Time since purchase (within 30 days), 2) Reason for refund, 3) Usage of the service. Please contact billing@company.com with your account details and refund request. Each case is reviewed individually.",
+    "category": "Billing",
+    "keywords": "refund, money back, return, billing, cancel",
+    "priority": 1
+  }
+]
