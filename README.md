@@ -1,8 +1,8 @@
-# 🤖 AI Customer Support Bot
+#  AI Customer Support Bot
 
 A comprehensive AI-powered customer support chatbot with FAQ matching, contextual memory, and intelligent escalation capabilities. Built with FastAPI, SQLAlchemy, and Google Gemini AI integration.
 
-## 🎯 Features
+##  Features
 
 - **Intelligent Conversations**: AI-powered responses using Google Gemini AI
 - **FAQ Matching**: Automatic matching of user queries with predefined FAQs
@@ -13,8 +13,29 @@ A comprehensive AI-powered customer support chatbot with FAQ matching, contextua
 - **Admin Dashboard**: Monitor sessions and escalated cases
 - **Conversation Summaries**: AI-generated summaries for reporting
 
+##  Architecture
 
-## 🚀 Quick Start
+```
+ai-customer-support-bot/
+├── backend/                 # Backend API services
+│   ├── main.py             # FastAPI application
+│   ├── models.py           # Database models
+│   ├── database.py         # Database connection
+│   ├── bot_service.py      # Core bot logic
+│   ├── llm_service.py      # LLM integration
+│   └── setup.py            # Database setup script
+├── frontend/               # Web interface
+│   ├── index.html          # Chat interface
+│   ├── style.css           # Styling
+│   └── script.js           # Frontend logic
+├── data/                   # Sample data
+│   └── sample_faqs.json    # Sample FAQ dataset
+├── tests/                  # Test scripts
+│   └── test_bot.py         # Core functionality tests
+└── docs/                   # Documentation
+```
+
+##  Quick Start
 
 ### Prerequisites
 
@@ -60,19 +81,19 @@ A comprehensive AI-powered customer support chatbot with FAQ matching, contextua
 6. **Open in browser**
    Navigate to `http://localhost:8000`
 
-## 🔧 Configuration
+##  Configuration
 
 ### Environment Variables
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `GEMINI_API_KEY` | Google Gemini API key (required) |
-| `DATABASE_URL` | Database connection string 
-| `API_HOST` | Server host | 
-| `API_PORT` | Server port |
-| `MODEL_NAME` | Gemini model to use | 
-| `MAX_TOKENS` | Maximum response tokens |
-| `TEMPERATURE` | Response creativity (0-2) |
+| `GEMINI_API_KEY` | Google Gemini API key (required) | - |
+| `DATABASE_URL` | Database connection string | `sqlite:///./data/customer_support.db` |
+| `API_HOST` | Server host | `localhost` |
+| `API_PORT` | Server port | `8000` |
+| `MODEL_NAME` | Gemini model to use | `gemini-1.5-flash` |
+| `MAX_TOKENS` | Maximum response tokens | `1000` |
+| `TEMPERATURE` | Response creativity (0-2) | `0.7` |
 
 ### Database Models
 
@@ -83,7 +104,7 @@ The system uses the following main models:
 - **FAQ**: Frequently asked questions and answers
 - **EscalationLog**: Escalation events and reasons
 
-## 🎯 API Endpoints
+##  API Endpoints
 
 ### Chat Operations
 
@@ -140,7 +161,7 @@ Response:
 }
 ```
 
-## 🧠 LLM Integration & Prompts
+##  LLM Integration & Prompts
 
 ### System Prompt Structure
 
@@ -199,7 +220,7 @@ Summarize this customer support conversation. Include:
 Keep the summary concise but comprehensive.
 ```
 
-## 🔄 Escalation Scenarios
+##  Escalation Scenarios
 
 ### Automatic Escalation Triggers
 
@@ -227,7 +248,7 @@ Users can manually request escalation at any time through:
 - API endpoint for manual escalation
 - Chat commands (e.g., "I want to speak to a human")
 
-## 📊 Session Management
+##  Session Management
 
 ### Session Lifecycle
 
@@ -243,7 +264,7 @@ Users can manually request escalation at any time through:
 - Enables follow-up questions and references
 - Automatic cleanup of old sessions
 
-## 🧪 Testing
+##  Testing
 
 ### Automated Tests
 
@@ -274,7 +295,7 @@ The test suite covers:
 
 4. **Test conversation flow** with follow-up questions
 
-## 🎮 Demo & Testing
+##  Demo & Testing
 
 ### Quick Demo
 
@@ -346,7 +367,7 @@ curl -X POST http://localhost:8000/api/chat \
 - **Status Indicators**: Show session state and escalation status
 - **Loading States**: Visual feedback during API calls
 
-## 🚀 Technical Achievements
+##  Technical Achievements
 
 ### Core Features Implemented ✅
 
@@ -378,7 +399,7 @@ curl -X POST http://localhost:8000/api/chat \
 - **Security**: Environment-based secrets management
 - **Documentation**: Detailed prompts and API documentation
 
-## 📋 Project Deliverables
+##  Project Deliverables
 
 ### ✅ Completed Deliverables
 
@@ -430,7 +451,7 @@ curl -X POST http://localhost:8000/api/chat \
 - Alert notifications for important events
 - Keyboard shortcuts (Enter to send, Ctrl+Enter in modals)
 
-## 📈 Admin Features
+##  Admin Features
 
 ### Statistics Dashboard
 
@@ -447,7 +468,7 @@ View all escalated sessions with:
 - Session summaries
 - Resolution status
 
-## 🔒 Security & Privacy
+##  Security & Privacy
 
 ### Data Protection
 
@@ -463,7 +484,7 @@ View all escalated sessions with:
 - Conversation data encrypted in database
 - GDPR-ready data export capabilities
 
-## 🚀 Deployment
+##  Deployment
 
 ### Local Development
 
@@ -535,7 +556,7 @@ Modify `frontend/style.css` to customize:
 - Responsive breakpoints
 - Animation effects
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -554,15 +575,9 @@ Modify `frontend/style.css` to customize:
    - Check CORS settings in main.py
    - Inspect browser console for errors
 
-### Debug Mode
 
-Enable debug logging:
-```bash
-export API_DEBUG=True
-python backend/main.py
-```
 
-## 📝 Contributing
+##  Contributing
 
 ### Development Setup
 
@@ -579,18 +594,14 @@ python backend/main.py
 - Add docstrings to functions
 - Include type hints where appropriate
 
-## 📄 License
-
-This project is licensed under the MIT License. See LICENSE file for details.
-
-## 🤝 Support
+##  Support
 
 For support and questions:
 - Check the troubleshooting section
 - Run the test suite for diagnostics
 - Review API documentation at `/docs` when server is running
 
-## 🎉 Demo
+##  Demo
 
 A complete working demo includes:
 1. Interactive chat interface
@@ -599,4 +610,3 @@ A complete working demo includes:
 4. Admin dashboard preview
 
 The system is designed to be production-ready with proper error handling, logging, and scalability considerations.
-
