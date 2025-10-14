@@ -13,27 +13,7 @@ A comprehensive AI-powered customer support chatbot with FAQ matching, contextua
 - **Admin Dashboard**: Monitor sessions and escalated cases
 - **Conversation Summaries**: AI-generated summaries for reporting
 
-##  Architecture
 
-```
-ai-customer-support-bot/
-├── backend/                 # Backend API services
-│   ├── main.py             # FastAPI application
-│   ├── models.py           # Database models
-│   ├── database.py         # Database connection
-│   ├── bot_service.py      # Core bot logic
-│   ├── llm_service.py      # LLM integration
-│   └── setup.py            # Database setup script
-├── frontend/               # Web interface
-│   ├── index.html          # Chat interface
-│   ├── style.css           # Styling
-│   └── script.js           # Frontend logic
-├── data/                   # Sample data
-│   └── sample_faqs.json    # Sample FAQ dataset
-├── tests/                  # Test scripts
-│   └── test_bot.py         # Core functionality tests
-└── docs/                   # Documentation
-```
 
 ##  Quick Start
 
