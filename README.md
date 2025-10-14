@@ -326,7 +326,7 @@ curl -X POST http://localhost:8000/api/chat \
   -d '{"session_id": "SESSION_ID", "message": "Hello, I need help"}'
 ```
 
-## 🎨 Frontend Interface
+##  Frontend Interface
 
 ### Chat Interface Features
 
@@ -349,18 +349,18 @@ curl -X POST http://localhost:8000/api/chat \
 
 ##  Technical Achievements
 
-### Core Features Implemented ✅
+### Core Features Implemented 
 
-- **✅ LLM Integration**: Google Gemini AI for intelligent responses
-- **✅ FAQ Matching**: Automatic matching with keyword-based algorithms
-- **✅ Contextual Memory**: Maintains conversation history and context
-- **✅ Smart Escalation**: Multiple detection methods for human handoff
-- **✅ Session Management**: Persistent chat sessions with tracking
-- **✅ REST API**: Comprehensive endpoints for all functionality
-- **✅ Database Integration**: SQLite with session and conversation storage
-- **✅ Frontend Interface**: Complete web-based chat interface
-- **✅ Conversation Summaries**: AI-powered conversation summarization
-- **✅ Demo System**: Automated testing and demonstration scripts
+- ** LLM Integration**: Google Gemini AI for intelligent responses
+- ** FAQ Matching**: Automatic matching with keyword-based algorithms
+- ** Contextual Memory**: Maintains conversation history and context
+- ** Smart Escalation**: Multiple detection methods for human handoff
+- ** Session Management**: Persistent chat sessions with tracking
+- ** REST API**: Comprehensive endpoints for all functionality
+- ** Database Integration**: SQLite with session and conversation storage
+- ** Frontend Interface**: Complete web-based chat interface
+- ** Conversation Summaries**: AI-powered conversation summarization
+- ** Demo System**: Automated testing and demonstration scripts
 
 ### Technical Stack
 
@@ -381,7 +381,7 @@ curl -X POST http://localhost:8000/api/chat \
 
 ##  Project Deliverables
 
-### ✅ Completed Deliverables
+###  Completed Deliverables
 
 1. **GitHub Repository Structure**
    - Well-organized codebase with clear directory structure
